@@ -33,7 +33,7 @@
 
 .orcid-tooltip{
 	position: absolute;
-	left: -85px;
+	left: -130px;
 	bottom: -35px;
 	z-index: 1;
 	opacity: 0;
@@ -51,7 +51,7 @@
 .orcid-tooltip::before {
     content: "";
     position: absolute;
-    top: 100%;
+    top: -29px;
     left: 50%;
     height: 18px;
     margin-left: -5px;
