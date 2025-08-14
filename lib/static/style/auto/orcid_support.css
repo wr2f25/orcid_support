@@ -22,8 +22,9 @@
 }
 
 .orcid:hover .orcid-tooltip{
-	visibility: visible;
 	opacity: 1;
+	transition: opacity 0.3s;
+	pointer-events: all;
 }
 
 .orcid img{
@@ -31,13 +32,11 @@
 }
 
 .orcid-tooltip{
-	visibility: hidden;
 	position: absolute;
 	left: -85px;
 	bottom: -35px;
 	z-index: 1;
 	opacity: 0;
-	transition: opacity 0.3s;
 	background-color: #A6CE39;
 	border: 1px solid #000000;
 	white-space: pre;
@@ -46,6 +45,7 @@
 	padding: 5px;
 	color: #fff;
 	border-radius: 5px;
+	pointer-events: none;
 }
 
 .orcid-tooltip::before {
