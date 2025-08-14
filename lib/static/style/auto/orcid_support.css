@@ -29,6 +29,11 @@
 
 .orcid img{
 	vertical-align: bottom;
+	/* Prevent its tooltip from being copied with the text */
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
 
 .orcid-tooltip{
@@ -45,7 +50,12 @@
 	padding: 5px;
 	color: #fff;
 	border-radius: 5px;
+	/* Act akin to `visibility: hidden` without actually changing visibility */
 	pointer-events: none;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
 
 .orcid-tooltip::before {
